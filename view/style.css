@@ -280,3 +280,9 @@ footer {
     margin: 50px;
     margin-left: 30%;
 }
+
+.btn-subscribe:hover {
+    background-color: transparent;
+    color: #5f4dee;
+    
+}

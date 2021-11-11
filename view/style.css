@@ -11,6 +11,7 @@ body {
     color: #dadfe2;
 }
 
+/* - - - - - - - - - - - - - - navbar - - - - - - - - - - - - - - - - */
 .navbar-main {
     background-color: #5f4dee;
     height: 55px;
@@ -96,6 +97,8 @@ ul li:hover ul {
     display: block;
 }
 
+/* - - - - - - - - - - - - - - header - - - - - - - - - - - - - - - - */
+
 header {
     background-color: #5f4dee;
     width: 100%;
@@ -129,6 +132,8 @@ p {
 
 .img-header {
     transform: rotate(2deg);
+    height: 600px;
+    width: 700px;
 }
 
 .text-container {
@@ -140,20 +145,24 @@ p {
 }
 
 .text-information {
-    line-height: 20px;
+    line-height: 30px;
+    font-size:18px;
+    width: 100%;
+    color: white;
 }
 
 .btn-discover, .btn-signup {
     border-radius: 50px;
     border: 1px solid;
     border-color: #dadfe2;
-    height: 55px;
+    height: 50px;
     width: 140px;
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 10px;
     text-align: center;
-    margin: 10px 10px;
+    margin: 5px;
     cursor: pointer;
+    margin-top: 5px;
 }
 
 .btn-discover {
@@ -181,6 +190,8 @@ p {
     overflow-y: hidden;
 }
 
+/* - - - - - - - - - - - - - - description - - - - - - - - - - - - - - - - */
+
 .sub-title {
     display:flex;
     text-align: center;
@@ -189,7 +200,6 @@ p {
     text-transform: uppercase;
     color: #5f4dee;
     margin-top: 70px;
-    margin-bottom: 10px; 
 }
 
 .info {
@@ -210,7 +220,16 @@ p {
     display: block;
 }
 
-.h5-title {
+h5 {
+    margin-bottom: 10px;
+}
+
+.img-description {
+    height: 130px;
+    width: 200px;
+}
+
+.card-title {
     color: #2f363b;
     display: block;
     text-align: center;
@@ -226,7 +245,32 @@ p {
     line-height: 25px;
     width: 70%;
     margin-left: 15%;
+    margin-top: 15px;
 }
+
+.btn-subscribe {
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #5f4dee;
+    height: 45px;
+    width: 40%;
+    font-size: 14px;
+    margin-left: 20px;
+    margin: 10px 10px;
+    cursor: pointer;
+    background-color:#5f4dee;
+    color:white;
+    justify-content: center;
+    margin: 50px;
+    margin-left: 30%;
+}
+
+.btn-subscribe:hover {
+    background-color: transparent;
+    color: #5f4dee;
+}
+
+/* - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - */
 
 footer {
     background: #5f4dee;
@@ -264,25 +308,45 @@ footer {
     font-size: 15px;
 }
 
-.btn-subscribe {
-    border-radius: 50px;
-    border: 1px solid;
-    border-color: #5f4dee;
-    height: 45px;
-    width: 40%;
-    font-size: 14px;
-    margin-left: 20px;
-    margin: 10px 10px;
-    cursor: pointer;
-    background-color:#5f4dee;
+a {
     color: #e2e1e8;
-    justify-content: center;
-    margin: 50px;
-    margin-left: 30%;
 }
 
-.btn-subscribe:hover {
-    background-color: transparent;
-    color: #5f4dee;
+@media only screen and (max-width: 1200px) {
+    .container {
+        margin-left: 30px;
+    }
+    
+    h1 {
+        font-size: 52px;
+        line-height: 60px;
+    }
+
+    .text-container {
+        margin-right: 150px;;
+    }
+
+    .text-information {
+        font-size: 16px;
+    }
+
+    .subtitle-card {
+        font-size: 16px;
+        width: 75%;
+        margin-left: 15%;
+        margin-top: 15px;
+    }
+
+    .info {
+        width: 45%;
+        margin-left: 27%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+}
+
+@media only screen and (max-width: 400px) {
     
 }

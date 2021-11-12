@@ -73,9 +73,10 @@ body {
     position: absolute;
     display: none;
     background-color: #5f4dee;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-top: -3%;
     line-height: 25px;
+    width: 38%;
 }
 
 .item-dropdown {
@@ -84,9 +85,16 @@ body {
     color: #dadfe2;
     margin: 10px;
     width:90%;
-    border-bottom:1px solid rgba(255,255,255,.3);
-    margin-bottom: 10%;
-    margin-top: 10%;
+    margin-left: 15%;
+    font-size: 14px;
+}
+
+hr {
+    border: 0;
+    border-top: 0.5px solid rgb(214, 216, 218);
+    opacity: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .item-dropdown:hover {
@@ -95,6 +103,20 @@ body {
 
 ul li:hover ul {
     display: block;
+}
+
+.checkbutton {
+    font-size: 25px;
+    color: #dadfe2;
+    float: right;
+    line-height: 60px;
+    margin-right: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 /* - - - - - - - - - - - - - - header - - - - - - - - - - - - - - - - */
@@ -109,14 +131,12 @@ div {
     display: block;
 }
 
-.container {
-    margin-left: 100px;
-}
-
-.row {
-    display: flex;
+.row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    grid-auto-columns: 100px;
 }
 
 h1 {
@@ -136,12 +156,15 @@ p {
     width: 700px;
 }
 
+.container {
+    margin-left: 25px;
+}
+
 .text-container {
-    display: fixed;
-    margin-left: 15px;
-    width: 38%;
-    height: 40%;
-    margin-right: 140px;
+    width: 70%;
+    left: 5%;
+    margin-left: 15%;
+    margin-top: 10px;
 }
 
 .text-information {
@@ -208,6 +231,14 @@ p {
     font-size: 23px;
     width: 40%;
     margin-left: 30%;
+}
+
+.row-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-auto-columns: 100px;
 }
 
 .card {
@@ -344,7 +375,42 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-    
+    .checkbutton, #check {
+        display: block;
+    }
+
+    .top-menu-horizontal {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        right: -150%;
+        background-color: #5f4dee;
+        text-align: left;
+        transition: all .5s;
+        line-height: 5px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .row-2 {
+    }
+
+    .img-container {
+
+    }
+
+    .img-header {
+        transform: rotate(0deg);
+        height: 500px;
+        width: 600px;
+    }
 }
 
 @media only screen and (max-width: 400px) {

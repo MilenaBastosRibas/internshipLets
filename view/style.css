@@ -109,8 +109,8 @@ ul li:hover ul {
     font-size: 25px;
     color: #dadfe2;
     float: right;
-    line-height: 60px;
-    margin-right: 80px;
+    line-height: 55px;
+    margin-right: 40px;
     cursor: pointer;
     display: none;
 }
@@ -304,9 +304,9 @@ h5 {
 /* - - - - - - - - - - - - - - footer - - - - - - - - - - - - - - - - */
 
 footer {
-    background: #5f4dee;
+    background-color: #5f4dee;
     min-height: 50px; 
-    height: 200px;
+    height: 300px;
 }
 
 .footer-title {
@@ -326,11 +326,11 @@ footer {
 }
 
 .about-container, .link-container, .contact-container {
-    padding-left: 50px;
+    padding: 5%;
 }
 
 .copyright-container {
-    background: #5f4dee;
+    background-color: #5f4dee;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -343,7 +343,7 @@ a {
     color: #e2e1e8;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
     .container {
         margin-left: 30px;
     }
@@ -372,10 +372,14 @@ a {
         width: 45%;
         margin-left: 27%;
     }
+
+    footer {
+        height: 400px;
+    }
 }
 
-@media only screen and (max-width: 800px) {
-    .checkbutton, #check {
+@media only screen and (max-width: 768px) {
+    .checkbutton {
         display: block;
     }
 
@@ -387,6 +391,7 @@ a {
         background-color: #5f4dee;
         text-align: left;
         transition: all .5s;
+        display: none;
         line-height: 5px;
     }
 
@@ -400,19 +405,88 @@ a {
     }
 
     .row-2 {
-    }
-
-    .img-container {
-
+        grid-template-columns: 1fr;
     }
 
     .img-header {
         transform: rotate(0deg);
-        height: 500px;
-        width: 600px;
+        height: 600px;
+        width: 700px;
+        display: flex;
+    }
+
+    .row-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .text-container {
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .text-information {
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+        line-height: 30px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+
+    .img-container {
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .info {
+        width: auto;
+        margin: 0;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        margin: 0;
+        padding: 0;
+    }
+
+    .subtitle-card {
+        width: auto;
+        margin: 0;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
+    }
+
+    .btn-subscribe {
+        margin: 40px;
+        margin-left: 28%;
+        width: 50%;
+    }
+
+    footer {
+        height: 650px;
+    }
+
+    .footer-text {
+        margin: 0;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    
+@media only screen and (max-width: 425px) {
+    .logo-tivo {
+        margin: auto, auto, 0, 0;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .logo-tivo {
+        margin: auto, auto, 0, 0;
+    }
 }

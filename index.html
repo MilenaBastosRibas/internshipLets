@@ -51,7 +51,7 @@
         <div class="container">
             <div class="row-2">
                 <div class="text-container">
-                    <h1><b>SaaS App Web HTML Template</b></h1>
+                    <h1 class="text"><b>SaaS App Web HTML Template</b></h1>
                     <p class="text-information">
                         Use Tivo to automate your marketing actions in order to reach a much larger audience in your
                         field of work
@@ -71,7 +71,7 @@
 
     <section>
         <div class="description">
-            <div class="sub-title">
+            <div class="subtitle">
                 <h5>Description</h5>
             </div>
 
@@ -115,9 +115,58 @@
             </div>
         </div>
 
-        <button class="btn-subscribe">
+        <button id="btn-sub" class="btn-subscribe">
             <b>Subscribe</b>
-            </div>
+        </button>
+
+        <div id="modal-subscribe" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+            <form>
+                <label id="dados"><b>Dados de identificação</b><br>
+                <label>Nome: </label><br>
+                <input type="text" id="nome" size="60"><br>
+
+                <label>E-mail: </label><br>
+                <input type="text" id="email" size="80"><br>
+
+                <label>Data de nascimento: </label>
+                <input type="date" id="dataNascimento">
+
+                <label>Telefone: </label>
+                <input type="tel" id="tel" size="20"><br>
+
+                <label id="endereco"><b>Endereço</b><br>
+                <label class="modal-field">CEP: </label>
+                <input type="text" id="cep" value="" size="10" maxlength="9" onblur="buscaCep(this.value);"><br>
+                
+                <label class="modal-field">Rua: </label>
+                <input type="text" id="rua" size="60"><br>
+                
+                <label class="modal-field">Bairro:
+                <input type="text" id="bairro" size="40"></label>
+                
+                <label class="modal-field">Cidade: 
+                <input type="text" id="cidade" size="40"></label><br>
+                
+                <label class="modal-field">Estado: 
+                <input type="text" id="uf" size="2"></label>
+                
+                <label class="ibge">IBGE: 
+                <input type="text" id="ibge" size="8"></label><br>
+            </form>
+            <button type="button" id="btn-submeter">Submeter</button>
+            </div> 
+        </div>
+
+        <script src="main.js"></script>
+    </section>
+
+    <section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d901.0579839376613!2d-51.470635070834916!3d-25.3970457874906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ef362dab952f4b%3A0x8b4685920af90ff9!2sR.%20XV%20de%20Novembro%2C%208065%20-%20Centro%2C%20Guarapuava%20-%20PR%2C%2085010-000!5e0!3m2!1spt-BR!2sbr!4v1630496349490!5m2!1spt-BR!2sbr"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
     </section>
 
     <footer>

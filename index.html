@@ -66,8 +66,14 @@
                 </div>
             </div>
         </div>
-
     </header>
+
+    <div class="glider">
+        <div class="carousel">
+            
+        </div>
+        <a></a>
+    </div>
 
     <section>
         <div class="description">
@@ -123,7 +129,7 @@
             <div class="modal-content">
                 <span class="close">&times;</span>
             <form>
-                <label id="dados"><b>Dados de identificação</b><br>
+                <label class="dados"><b>Dados de identificação</b><br>
                 <label>Nome: </label><br>
                 <input type="text" id="nome" size="60"><br>
 
@@ -134,9 +140,9 @@
                 <input type="date" id="dataNascimento">
 
                 <label>Telefone: </label>
-                <input type="tel" id="tel" size="20"><br>
+                <input type="tel" id="tel" size="14"><br>
 
-                <label id="endereco"><b>Endereço</b><br>
+                <label class="endereco"><b>Endereço</b></label><br>
                 <label class="modal-field">CEP: </label>
                 <input type="text" id="cep" value="" size="10" maxlength="9" onblur="buscaCep(this.value);"><br>
                 
@@ -161,6 +167,56 @@
 
         <script src="main.js"></script>
     </section>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img class="img-slider" src="images/testimonial-1.jpg" style="width:14%">
+            <div class="slider-text">
+                <div class="feedback">I started to use Tivo with the free trial about a year ago and never stopped since
+                then. It does all the repeating marketing tasks and allows me to focus on core development activities
+                like new product research and design. I love it and recommend it to everyone.</div>
+                <div class="name">Jude Thorn - Online Marketer</div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="img-slider" src="images/testimonial-2.jpg" style="width:14%">
+            <div class="slider-text">
+                <div class="feedback">Awesome features for the money. I never thought such a low ammount of money would
+                bring me so many leads per month. Before Tivo I used the services of an agency which cost 10x more and
+                delivered far less. Highly recommended to marketers focused on results.</div>
+                <div class="name">Roy Smith - Developer</div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="img-slider" src="images/testimonial-3.jpg" style="width:14%">
+            <div class="slider-text">
+                <div class="feedback">Tivo is the best marketing automation app for small and medium sized business. It
+                understands the mindset of young entrepreneurs and provides the necessary data for wise marketing
+                decisions. Just give it a try and you will definitely not regret spending your time.</div>
+                <div class="name">Marsha Singer - Online Marketer</div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img class="img-slider" src="images/testimonial-4.jpg" style="width:14%">
+            <div class="slider-text">
+                <div class="feedback">Tivo is one of the greatest marketing automation apps out there. I especially love
+                the Reporting Tools module because it gives me such a great amount of information based on little
+                amounts of input gathered in just few weeks of light weight usage. Recommended!</div>
+                <div class="name">Ronda Louis - Online Marketer</div>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <script src="main.js"></script>
 
     <section>
         <iframe
